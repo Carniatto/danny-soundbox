@@ -1,0 +1,26 @@
+# Minimal zsh configuration
+# Only essential functionality, no complex themes or bash compatibility
+
+# Basic prompt
+PS1='%m %~ %# '
+
+# NVM configuration
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Basic path
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
+
+# History
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
+# Basic completion
+autoload -Uz compinit
+compinit
+
+# No complex themes or Oh My Zsh
+# No bash compatibility layers
+# No p10k instant prompt
