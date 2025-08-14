@@ -1,0 +1,16 @@
+import { describe, it, expect } from 'vitest';
+import { FeatureControllerTestComponent } from './feature-controller-test.component';
+
+describe('FeatureControllerTestComponent', () => {
+  it('should be defined', () => {
+    expect(FeatureControllerTestComponent).toBeDefined();
+  });
+
+  it('should have the correct component name', () => {
+    expect(FeatureControllerTestComponent.name).toBe('FeatureControllerTestComponent');
+  });
+
+  it('should be a class', () => {
+    expect(typeof FeatureControllerTestComponent).toBe('function');
+  });
+});
