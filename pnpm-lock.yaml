@@ -26,6 +26,9 @@ importers:
       '@angular/router':
         specifier: ^20.2.0-next.0
         version: 20.2.0-rc.0(@angular/common@20.2.0-rc.0(@angular/core@20.2.0-rc.0(@angular/compiler@20.2.0-rc.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.2.0-rc.0(@angular/compiler@20.2.0-rc.0)(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@20.2.0-rc.0(@angular/common@20.2.0-rc.0(@angular/core@20.2.0-rc.0(@angular/compiler@20.2.0-rc.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.2.0-rc.0(@angular/compiler@20.2.0-rc.0)(rxjs@7.8.2)(zone.js@0.15.1)))(rxjs@7.8.2)
+      dualsense-ts:
+        specifier: ^5.5.0
+        version: 5.5.0
       rxjs:
         specifier: ~7.8.0
         version: 7.8.2
@@ -54,6 +57,9 @@ importers:
       '@types/jsdom':
         specifier: ^21.1.7
         version: 21.1.7
+      '@types/w3c-web-hid':
+        specifier: ^1.0.6
+        version: 1.0.6
       '@vitest/browser':
         specifier: ^3.2.4
         version: 3.2.4(vite@7.1.0(@types/node@24.2.1)(sass@1.90.0))(vitest@3.2.4)
@@ -1287,6 +1293,9 @@ packages:
   '@types/tough-cookie@4.0.5':
     resolution: {integrity: sha512-/Ad8+nIOV7Rl++6f1BdKxFSMgmoqEoYbHRpPcx3JEfv8VRsQe9Z4mCXeJBzxs7mbHY/XOZZuXlRNfhpVPbs6ZA==}
 
+  '@types/w3c-web-hid@1.0.6':
+    resolution: {integrity: sha512-IWyssXmRDo6K7s31dxf+U+x/XUWuVsl9qUIYbJmpUHPcTv/COfBCKw/F0smI45+gPV34brjyP30BFcIsHgYWLA==}
+
   '@vitejs/plugin-basic-ssl@2.1.0':
     resolution: {integrity: sha512-dOxxrhgyDIEUADhb/8OlV9JIqYLgos03YorAueTIeOUskLJSEsfwCByjbu98ctXitUN3znXKp0bYD/WHSudCeA==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
@@ -1705,6 +1714,14 @@ packages:
 
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
+
+  dualsense-ts@5.5.0:
+    resolution: {integrity: sha512-vKGryM3puMEleu6Z7kllqgYjcKWTX8PZu8tvfNfTCoqMtSGcVgi3Rcb8UvAVJWeHGVzx061lIXVU5zAzOTCMVg==}
+    peerDependencies:
+      node-hid: ^2.1.1
+    peerDependenciesMeta:
+      node-hid:
+        optional: true
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
@@ -4380,6 +4397,8 @@ snapshots:
 
   '@types/tough-cookie@4.0.5': {}
 
+  '@types/w3c-web-hid@1.0.6': {}
+
   '@vitejs/plugin-basic-ssl@2.1.0(vite@7.1.0(@types/node@24.2.1)(sass@1.90.0))':
     dependencies:
       vite: 7.1.0(@types/node@24.2.1)(sass@1.90.0)
@@ -4873,6 +4892,8 @@ snapshots:
       dom-serializer: 2.0.0
       domelementtype: 2.3.0
       domhandler: 5.0.3
+
+  dualsense-ts@5.5.0: {}
 
   dunder-proto@1.0.1:
     dependencies:
