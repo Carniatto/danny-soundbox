@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ConnectButtonComponent } from './domains/soundbox/ui/connect-button.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ConnectButtonComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
