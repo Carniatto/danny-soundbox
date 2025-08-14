@@ -9,12 +9,20 @@ vi.mock('dualsense-ts', () => ({
     },
     left: {
       bumper: { on: vi.fn() },
-      analog: { x: { on: vi.fn() }, y: { on: vi.fn() } },
+      analog: { 
+        x: { on: vi.fn() }, 
+        y: { on: vi.fn() },
+        button: { on: vi.fn() }
+      },
       trigger: { on: vi.fn() },
     },
     right: {
       bumper: { on: vi.fn() },
-      analog: { x: { on: vi.fn() }, y: { on: vi.fn() } },
+      analog: { 
+        x: { on: vi.fn() }, 
+        y: { on: vi.fn() },
+        button: { on: vi.fn() }
+      },
       trigger: { on: vi.fn() },
     },
     cross: { on: vi.fn() },
@@ -27,7 +35,15 @@ vi.mock('dualsense-ts', () => ({
       left: { on: vi.fn() },
       right: { on: vi.fn() },
     },
-    touchpad: { on: vi.fn() },
+    touchpad: { 
+      on: vi.fn(),
+      left: {
+        x: { on: vi.fn() },
+        y: { on: vi.fn() },
+        contact: { on: vi.fn() }
+      }
+    },
+    ps: { on: vi.fn() },
     gyroscope: { x: { on: vi.fn() }, y: { on: vi.fn() }, z: { on: vi.fn() } },
     accelerometer: { x: { on: vi.fn() }, y: { on: vi.fn() }, z: { on: vi.fn() } },
   })),
