@@ -39,6 +39,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/danny-soundbox/",
               "budgets": [
                 {
                   "type": "initial",
