@@ -16,6 +16,17 @@ Object.defineProperty(window, 'matchMedia', {
   })),
 });
 
+// Mock WebHID API
+Object.defineProperty(navigator, 'hid', {
+  writable: true,
+  value: {
+    requestDevice: vi.fn().mockResolvedValue([]),
+    addEventListener: vi.fn(),
+    removeEventListener: vi.fn(),
+    dispatchEvent: vi.fn(),
+  },
+});
+
 // Mock ResizeObserver
 global.ResizeObserver = vi.fn().mockImplementation(() => ({
   observe: vi.fn(),
