@@ -26,6 +26,8 @@ A **PS5 controller-controlled soundboard** built with Angular 20.2 and WebHID AP
 
 **🌐 [danny-soundbox.carniatto.dev](https://danny-soundbox.carniatto.dev)**
 
+[![Deploy to GitHub Pages](https://github.com/Carniatto/danny-soundbox/actions/workflows/deploy.yml/badge.svg)](https://github.com/Carniatto/danny-soundbox/actions/workflows/deploy.yml)
+
 *Note: Requires Chrome/Edge 89+ for WebHID support*
 
 ## 📱 Screenshots
